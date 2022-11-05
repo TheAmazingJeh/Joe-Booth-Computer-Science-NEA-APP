@@ -8,8 +8,9 @@ from tkinter.font import Font, ITALIC                     # Import Tkinter fonts
 # Import Tkinter widgets
 from tkinter.ttk import Label, Button, Frame              # Import Tkinter widgets
 
-from lib.DoubleScrollFrame import DoubleScrolledFrame     # Import DoubleScrolledFrame class
-from lib.MainFrames import WelcomeFrame, TaskFrame        # Import MainContent classes
+from lib.local_lib.DoubleScrollFrame import DoubleScrolledFrame     # Import DoubleScrolledFrame class
+from lib.MainFrames import WelcomeFrame, TaskFrame                  # Import MainContent classes
+from lib.TaskHandler import NewTask                         # Import TaskHandler classes
 
 
 class Window(Tk):
@@ -22,11 +23,12 @@ class Window(Tk):
         self.tasks = []                                                        # Create a list to store tasks
         self.fileLocation = loc = os.path.dirname(os.path.abspath(__file__))   # Get current directory
         self.Startup()                                                         # Run the startup function
-
+        size = (800, 600)                                                      # Set the window size
         self.title(appName)                                                    # Set the window title
+        self.geometry(f"{size[0]}x{size[1]}")                                               # Set the window size
 
         # Put all widgets in a scrollable frame
-        self.scrollFrame = DoubleScrolledFrame(self)             
+        self.scrollFrame = DoubleScrolledFrame(self, height=size[1]-20, width=size[0]-20)             
         self.scrollFrame.grid(row=0, column=0, sticky="nsew")                  # Put the scrollFrame in the window
     
         # Create a menu
@@ -56,7 +58,7 @@ class Window(Tk):
         """Create a menu"""
         menuBar = Menu(self)
         fileMenu = Menu(menuBar, tearoff=0)
-        fileMenu.add_command(label="New Task", command=None)
+        fileMenu.add_command(label="New Task", command=self.InvokeNewTask)
         fileMenu.add_command(label="Link to Classroom", command=None)
 
         fileMenu.add_separator()
@@ -75,6 +77,9 @@ class Window(Tk):
         if json.load(open(self.fileLocation + "\\data\\tasks.json")) == []:                        # Check if the tasks file is empty
             self.firstTime = True                                                                   # Set firstTime to True
             
+    def InvokeNewTask(self):
+        NewTask(self, self.fileLocation) 
+        self.taskFrame.RefreshTasks(json.load(open(self.fileLocation + "\\data\\tasks.json")))
 
     def ShowFrame(self, frame: Frame):
         for item in self.frames: item.Hide()

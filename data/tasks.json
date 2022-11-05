@@ -1,99 +1,51 @@
 [
     {
         "id": 1,
-        "title": "Task 1",
-        "description": "Description 1",
-        "type": "simple",
-        "status": "Done"
+        "title": "1",
+        "description": "1",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":2,
-        "title": "Task 2",
-        "description": "Description 2",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 2,
+        "title": "2",
+        "description": "2",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":3,
-        "title": "Task 3",
-        "description": "Description 3",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 3,
+        "title": "3",
+        "description": "3",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":4,
-        "title": "Task 4",
-        "description": "Description 4",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 4,
+        "title": "5",
+        "description": "4",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":5,
-        "title": "Task 5",
-        "description": "Description 5",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 5,
+        "title": "This is a useful Task",
+        "description": "",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":6,
-        "title": "Task 6",
-        "description": "Description 6",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 6,
+        "title": "l",
+        "description": "omg l funny",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     },
     {
-        "id":7,
-        "title": "Task 7",
-        "description": "Description 7",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
-    },
-    {
-        "id":8,
-        "title": "Task 8",
-        "description": "Description 8",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
-    },
-    {
-        "id":9,
-        "title": "Task 9",
-        "description": "Description 9",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
-    },
-    {
-        "id":10,
-        "title": "Task 10",
-        "description": "Description 10",
-        "type": "classroom",
-        "data": {
-            "classroom": "data here"
-        },
-        "status": "Done"
+        "id": 7,
+        "title": "Scroll To See Me",
+        "description": ":)",
+        "dueDate": "2022/11/05",
+        "type": "Simple"
     }
 ]

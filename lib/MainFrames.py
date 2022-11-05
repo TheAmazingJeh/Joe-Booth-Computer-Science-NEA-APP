@@ -5,6 +5,8 @@ from tkinter.filedialog import askopenfile, asksaveasfile
 from tkinter.font import Font, ITALIC                     # Import Tkinter fonts
 # Import Tkinter widgets
 from tkinter.ttk import Label, Labelframe, Button, Entry, OptionMenu, Frame, Checkbutton, Spinbox
+from datetime import datetime
+
 
 # Import Task Object
 from lib.TaskHandler import Task
@@ -57,10 +59,12 @@ class TaskFrame(SimpleFrame):
 
     def LoadTasks(self, tasks: list):
         for item in tasks:
-            self.taskObjects.append(Task(self.allTaskFrame, item, self.fontTitle, self.fontDefault))
+            self.taskObjects.append(Task(self.allTaskFrame, item, self.fontTitle, self.fontDefault, self.fontItalic))
         print(f"[DEBUG] {len(self.taskObjects)} tasks loaded")
     def ClearTasks(self):
-        pass
+        for i in range(len(self.taskObjects)):
+            self.taskObjects[i].Remove()
+        self.taskObjects.clear()
     
     def RefreshTasks(self, tasks: list):
         self.ClearTasks()
