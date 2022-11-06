@@ -1,5 +1,6 @@
 import json
 from datetime import date
+from random import randint
 
 from tkinter import Tk, IntVar
 from tkinter.constants import *                           # Import Tkinter constants
@@ -83,14 +84,19 @@ def NewTask(master: Tk, loc: str):
     data = json.load(open(loc+"/data/tasks.json", "r"))
 
 
-    # Get the next ID
-    ID = 0
-    for item in data:
-        if item["id"] > ID: ID = item["id"]
-    print(ID)
+    # Produce a new ID
+    while 1:
+        ID = randint(111111111111, 999999999999)
+        isid = False
+        for item in data:
+            if item["id"] == f"lt{ID}":
+                isid = True
+        if isid == False: break
+                
+        
 
     data.append({
-        "id": ID+1,
+        "id": f"lt{ID}",
         "title": d.result["title"],
         "description": d.result["description"],
         "dueDate": d.result["dueDate"],

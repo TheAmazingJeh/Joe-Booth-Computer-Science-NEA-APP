@@ -60,7 +60,6 @@ class TaskFrame(SimpleFrame):
     def LoadTasks(self, tasks: list):
         for item in tasks:
             self.taskObjects.append(Task(self.allTaskFrame, item, self.fontTitle, self.fontDefault, self.fontItalic))
-        print(f"[DEBUG] {len(self.taskObjects)} tasks loaded")
     def ClearTasks(self):
         for i in range(len(self.taskObjects)):
             self.taskObjects[i].Remove()

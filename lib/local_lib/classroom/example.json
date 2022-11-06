@@ -1,0 +1,31 @@
+{
+    "response": 200,
+    "courses": true,
+    "data": [
+        {
+            "id": "545540009502",
+            "name": "13AMa1 Maths 2022",
+            "link": "https://classroom.google.com/c/NTQ1NTQwMDA5NTAy",
+            "coursework": [
+                {
+                    "id": "568112952210",
+                    "course_id": "545540009502",
+                    "title": "Exercise 8B and mark Binomial Expansion Assignment",
+                    "description": "Hi Year 13\nPlease complete all the even numbered questions from Exercise 8B.\n\nAlso, please mark and correct your Binomial Expansion assignments using the attached mark scheme\n\nThanks\u00a0\nMs Field",
+                    "due_date": "2022/11/7",
+                    "link": "https://classroom.google.com/c/NTQ1NTQwMDA5NTAy/a/NTY4MTEyOTUyMjEw/details"
+                },
+                {
+                    "id": "491715322105",
+                    "course_id": "545540009502",
+                    "title": "Finish exercises 7a, 7b and 7c",
+                    "description": "",
+                    "due_date": "2022/11/14",
+                    "link": "https://classroom.google.com/c/NTQ1NTQwMDA5NTAy/a/NDkxNzE1MzIyMTA1/details"
+                }
+            ]
+        }
+    ],
+    "courseCount": 1,
+    "courseworkCount": 2
+}

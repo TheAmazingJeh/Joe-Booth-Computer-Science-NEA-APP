@@ -1,51 +1,23 @@
 [
     {
-        "id": 1,
-        "title": "1",
-        "description": "1",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
+        "title": "Exercise 8B and mark Binomial Expansion Assignment",
+        "description": "13AMa1 Maths 2022",
+        "dueDate": "2022/11/7",
+        "id": "gc568112952210",
+        "type": "classroom"
     },
     {
-        "id": 2,
-        "title": "2",
-        "description": "2",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
+        "title": "Finish exercises 7a, 7b and 7c",
+        "description": "13AMa1 Maths 2022",
+        "dueDate": "2022/11/14",
+        "id": "gc491715322105",
+        "type": "classroom"
     },
     {
-        "id": 3,
-        "title": "3",
-        "description": "3",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
-    },
-    {
-        "id": 4,
-        "title": "5",
-        "description": "4",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
-    },
-    {
-        "id": 5,
-        "title": "This is a useful Task",
-        "description": "",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
-    },
-    {
-        "id": 6,
-        "title": "l",
-        "description": "omg l funny",
-        "dueDate": "2022/11/05",
-        "type": "Simple"
-    },
-    {
-        "id": 7,
-        "title": "Scroll To See Me",
-        "description": ":)",
-        "dueDate": "2022/11/05",
+        "id": "lt780610681101",
+        "title": "Test 12d",
+        "description": "Task ID has 12 Digits",
+        "dueDate": "2022/11/06",
         "type": "Simple"
     }
 ]
